@@ -1,0 +1,379 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eee;
+    text-align: center;
+}
+
+
+
+/* HEADER */
+header {
+    background-color: #000;
+    min-height: 5px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid gold;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: white;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #222;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover, nav a.active{
+    color: gold;
+
+}
+
+/* CARD */
+.card {
+    background-color: white;
+    width: 60%;
+    min-height: 58vh;
+    margin: 25px auto;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* IMAGES */
+.images {
+    margin-bottom: 10px;
+}
+
+.images img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid gold;
+    margin: 5px;
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease,
+                filter 0.4s ease;
+}
+
+.images img:hover {
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 0 20px gold;
+    filter: brightness(1.15);
+}
+
+/*TABLE*/
+.card table {
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 24px;
+}
+
+.card td {
+    text-align: center;
+    vertical-align: top;
+}
+
+.card td img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+.card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid gold;
+    margin: 5px;
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease,
+                filter 0.4s ease;
+}
+
+.card img:hover {
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 0 20px gold;
+    filter: brightness(1.15);
+}
+
+/* Styles the manually added name text */
+.creator-name {
+    margin: 8px 0 0 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/* TEXT */
+h2 {
+    font-size: 32px;
+    margin: 10px;
+}
+
+.tagline {
+    color: goldenrod;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.description {
+    line-height: 1.6;
+    margin: 15px 0;
+    padding: 30px;
+}
+
+/* BUTTON */
+.learn-more {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.learn-more:hover {
+    background-color: gold;
+    color: black;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    align-items: bottom;
+    flex-direction: column;
+}
+
+/* CONTACT */
+/* CONTACT PAGE */
+
+.contact-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 35px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info {
+    padding: 25px;
+    background-color: #222222;
+    color: #ffffff;
+    border-radius: 12px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-info h2 {
+    color: #f4c542;
+}
+
+.contact-info p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    margin-top: 35px;
+}
+
+.contact-details h3,
+.social-links h3 {
+    color: #f4c542;
+    margin-bottom: 15px;
+}
+
+.contact-details a {
+    color: #f4c542;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f4c542;
+    color: #222222;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.contact-form {
+    padding: 25px;
+}
+
+.contact-form h2 {
+    color: #222222;
+}
+
+.contact-form label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #f4c542;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    background-color: #222222;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #f4c542;
+    color: #222222;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        margin: 25px 15px;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+        font-size: 24px;
+    }
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        padding: 15px 5px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .card {
+        width: 90%;
+        min-height: auto;
+        margin: 20px auto;
+        padding: 25px 15px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .images img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .description {
+        padding: 15px;
+    }
+}
